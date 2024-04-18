@@ -1,0 +1,46 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Reset de CSS - Limpa configurações padrão que atrapalham */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{
+    width: 80vw;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+header{
+    height: 110px;
+    background-color: #1E4A6C
+}
+
+header .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{ 
+    width: 250px;
+    align-items: center;
+}
+
+.menu{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 18px;
+}
+
