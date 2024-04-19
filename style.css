@@ -1,6 +1,9 @@
 @font-face{
     font-family: 'Montserrat';
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
+
+    font-family: 'Inter';
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 /* Reset de CSS - Limpa configurações padrão que atrapalham */
@@ -18,7 +21,7 @@
 }
 
 header{
-    height: 110px;
+    height: 90px; /*tamanho do menu*/
     background-color: #1E4A6C
 }
 
@@ -43,4 +46,60 @@ header img{
     color: white;
     font-size: 18px;
 }
+
+.menu a{ /*para mexer nas letras do menu*/
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter';
+
+    text-decoration: underline transparent;  /*Para tirar a linha padrão que fica de baixo da letra */
+    text-decoration-thickness: 2px; /*stroke igual do figma */
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover{
+    text-decoration-color: black ;
+}
+
+.banner img{
+    height: 100vh;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.conteudo-banner{
+    height: 300px;
+    background: rgb(63,157,229);
+    background: linear-gradient(90deg, rgba(63,157,229,1) 00%, rgba(156,191,218,1) 100%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+div.conteudo-banner p{
+    color: black;
+    height: 1;
+    width: 100%;
+    
+    font-family: "Montserrat";
+    font-size: 45px;
+
+    display: flex;
+    
+    justify-content: center;
+}
+
+div.conteudo-2 p{
+    font-family: "Montserrat";
+    font-size: 30px;
+    padding-top: 50px;
+}
+
 
