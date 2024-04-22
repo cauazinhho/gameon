@@ -16,12 +16,11 @@
 .container-grid{
     width: 80vw;
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
 header{
-    height: 90px; /*tamanho do menu*/
+    
     background-color: #1E4A6C
 }
 
@@ -42,7 +41,8 @@ header img{
     width: 500px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    height: 100px;
     color: white;
     font-size: 18px;
 }
@@ -55,11 +55,14 @@ header img{
     text-decoration: underline transparent;  /*Para tirar a linha padrão que fica de baixo da letra */
     text-decoration-thickness: 2px; /*stroke igual do figma */
 
-    transition: text-decoration 500ms ease;
+    text-transform: uppercase;
 }
 
 .menu a:hover{
-    text-decoration-color: black ;
+    color: black;
+    font-size: 20px;
+
+    transition: text-decoration 500ms ease;
 }
 
 .banner img{
@@ -83,11 +86,11 @@ header img{
 
 }
 
-div.conteudo-banner p{
+.conteudo-banner p{
     color: black;
-    height: 1;
+  
     width: 100%;
-    
+
     font-family: "Montserrat";
     font-size: 45px;
 
@@ -96,10 +99,25 @@ div.conteudo-banner p{
     justify-content: center;
 }
 
-div.conteudo-2 p{
+.conteudo-2 p{
     font-family: "Montserrat";
     font-size: 30px;
     padding-top: 50px;
 }
 
+#sobre{
+    height: 800px;
+}
 
+h2{
+    font-family: "Inter";
+    font-size: 28px;
+}
+
+#sobre p{
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+section .container-grid{
+}
