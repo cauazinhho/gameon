@@ -173,6 +173,7 @@ section img{
     font-family: "Montserrat";
     font-size: 26px;
     text-transform: uppercase;
+   
 }
 
 #contato img{
@@ -192,32 +193,58 @@ section img{
 }
 
 
-#contato form label{
-    font-size: 22px;
-}
 
 #contato form{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 70px;
+    align-items: center;
 }
 
 .campo{
     margin-bottom: 75px;
-
+    
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.campo input{
-    width: 200px;
-    height: 25px;
-    border: none;
-    border-radius: 5px;
+#contato form label{
+    text-align: center;
+    margin-bottom: 7px;
+    
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: white;
+}
 
+.campo input{
+    width: 510px;
+    height: 35px;
+    
+    border: none;
+    border-radius: 4px;
+    
+    /* background-color: #1E4A6C; */
+    background-color: #316B9E;
+    
+    display: flex;
+    align-items: center;
     outline: none;
+    
+    font-family: "Montserrat";
+    color: white;
 
     text-indent: 10px;
+}
+
+.campo input:focus{
+    /* outline: 2px solid #1E4A6C; */
+    /* outline: 2px solid #6A49EB; */
+    outline: 2px solid #000000;
+}
+
+#contato form input::placeholder{
+    color: #b9b9b9
 }

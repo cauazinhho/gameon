@@ -65,30 +65,31 @@
 
         <form>
             <div class="campo">
-                <label for="campo-nome">Nome</label>
-                <input id="campo-nome" type="text" placeholder="">
+                <label for="campo-nome">Qual é o seu nome?</label>
+                <input id="campo-nome" type="text" placeholder="Digite seu nome...">
             </div>
 
             <div class="campo">
-                <label for="campo-email">E-mail</label>
-                <input id="campo-email" type="email" placeholder="">
+                <label for="campo-email">Em qual email podemos te mandar uma resposta?</label>
+                <input id="campo-email" type="email" placeholder="Digite seu email...">
             </div>
 
             <div class="campo">
-                <label for="campo-cpf">CPF</label>
-                <input id="campo-cpf" type="number" placeholder="">
+                <label for="campo-cpf">Qual é o seu cpf?</label>
+                <input id="campo-cpf" type="text" placeholder="Digite seu CPF..." pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" >
             </div>
 
             <div class="campo">
-                <label for="campo-telefone">Telefone</label>
-                <input id="campo-telefone" type="number" placeholder="">
+                <label for="campo-telefone">Qual é o seu telefone?</label>
+                <input id="campo-telefone" type="tel" placeholder="Digite seu Telefone..." pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
             </div>
 
             <div class="campo">
-                <label for="campo-celular">Celular</label>
-                <input id="campo-celular" type="number" placeholder="">
+                <label for="campo-celular">Qual é o seu telefone celular?</label>
+                <input id="campo-celular" type="tel" placeholder="Digite seu celular..." pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required> 
             </div>
         </form>
+
         <button type="submit">Enviar</button>
     </section>
 
