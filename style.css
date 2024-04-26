@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container-grid{
     width: 90vw;
     max-width: 100%;
@@ -22,8 +26,10 @@
 }
 
 header{
+    /* position: fixed; */
+    background-color: #1E4A6C;
+    width: 100%;
     
-    background-color: #1E4A6C
 }
 
 header .container-grid{
@@ -70,6 +76,7 @@ header img{
 .banner img{
     height: 750px;
     width: 100%;
+    padding: inherit;
     
     background-repeat: no-repeat;
     background-position: center;
@@ -140,8 +147,10 @@ section #sobre{
 }
 
 section img{
-    width: 50%;
+    padding-left: 50px;
+    width: 45%;
     height: 500px;
+
 }
 
 #sobre h2{
@@ -153,7 +162,7 @@ section img{
     text-transform: uppercase;
 }
 
-#sobre p {
+#sobre p{
     font-family: "Montserrat";
     font-size: 25px;
     
@@ -161,6 +170,7 @@ section img{
     text-align: justify;
     align-items: center;
     padding-top: 35px;
+    padding-right: 15px;
 
 }
 
@@ -243,6 +253,7 @@ section img{
     border: none;
     border-radius: 4px;
     
+    font-size: 16px;
     
     background-color: #316B9E;
     
@@ -262,7 +273,7 @@ section img{
 }
 
 #contato form input::placeholder{
-    color: #c9c9c9
+    color: #dddddd
 }
 
 #contato button{
@@ -398,4 +409,77 @@ footer h2{
     justify-content: space-between;
 
     width: 385px;
+}
+
+/* RESPANSIVIDADE PARA CELULAR */
+@media screen and (max-width: 1500px){
+    .container-cards{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    section img{
+        width: 44%;
+
+    }
+
+    .conteudo-sobre{
+        padding-right: 60px;
+        padding: 70px;
+    }
+
+    #sobre p {
+        padding-top: unset;
+        padding-right: unset;
+    }
+
+    #sobre h2{
+        padding-top: unset;
+        margin-bottom: 10px;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    .card img{
+        width: 300px;
+    }
+    
+    .container-cards{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .conteudo-sobre{
+        padding: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    .conteudo-banner p{
+        text-align: center;
+    }
+
+    .encontre-nos p{
+        height: 50px;
+    }
+
+    .rodape{
+        flex-direction: column;
+    }
+
+    footer{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .conteudo-sobre{
+        padding: 5px 15px;
+    }
 }
