@@ -4,6 +4,10 @@
     src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+:root{
+    --azul-gameon: #77B3E2;
+}
+
 /* Reset de CSS - Limpa configurações padrão que atrapalham */
 *{
     margin: 0;
@@ -78,10 +82,12 @@ header img{
     background: linear-gradient(90deg, rgba(63,157,229,1) 00%, rgba(156,191,218,1) 100%);
 
     margin-top: -10px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
 
 }
 
@@ -120,13 +126,17 @@ section #sobre{
 
     text-align: center;
 
+    margin-bottom: 100px;
+    border-radius: 40px;
+
+    background-color: var(--azul-gameon);
+
 }
 
 .conteudo-sobre{
     width: 50%;
     height: 500px;
-    padding-right: 50px;
-    
+    padding-left: 60px;
 }
 
 section img{
@@ -138,7 +148,7 @@ section img{
     font-family: "Inter";
     font-size: 30px;
 
-    padding-top: 100px;
+    padding-top: 120px;
 
     text-transform: uppercase;
 }
@@ -150,7 +160,7 @@ section img{
     display: flex;
     text-align: justify;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 35px;
 
 }
 
@@ -168,7 +178,7 @@ section img{
     
     background-color: #77B3E2;
 
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     padding-bottom: 100px;
 }
 
@@ -178,7 +188,7 @@ section img{
     text-align: center;
 
     font-family: "Montserrat";
-    font-size: 26px;
+    font-size: 30px;
     text-transform: uppercase;
    
 }
@@ -248,7 +258,7 @@ section img{
 
 .campo input:focus{
     
-    outline: 2px solid #000000;
+    outline: 2px solid #ffffff;
 }
 
 #contato form input::placeholder{
@@ -282,7 +292,7 @@ section img{
 }
 
 #cases{
-    height: 1500px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,30 +302,100 @@ section img{
 
 #cases h2{
     margin-bottom: 70px;
+    font-family: "Inter";
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
 .container-cards{
-    width: 75%;
+    width: 65%;
 
     display: flex;
     justify-content: space-between;
 }
 
 .card{
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 500px;
-    background-color: aqua;
+    background-color: #77B3E2; 
+    border-radius: 10px;
+    border: none;
+
 }
 
 .card img{
     height: 55%;
-    width: 100%;
-
+    padding: 25px;
+    width: 385px;
+    border-radius: 8px;
 }
 
 .card p{
-    width: 385px;
-
+    padding: 7%;
     font-family: "Montserrat";
     font-size: 20px;
     color: white;
+    margin-bottom: 65px;
+}
+
+footer{
+    width: 100%;
+    height: 700px;
+    background-color: #3F9DE5;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-top: 110px;
+    
+    text-align: center;
+}
+
+.encontre-nos img{
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.encontre-nos h3{
+    font-family: "Inter";
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.encontre-nos p{
+    font-family: "Montserrat";
+    font-size: 25px;
+    width: 320px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 70px;
+    
+}
+
+footer h2{
+    font-family: "Inter";
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 120px;
+    text-align: center;
+    
+}
+
+.icones-redes{
+    display: flex;
+    justify-content: space-between;
+
+    width: 385px;
 }
