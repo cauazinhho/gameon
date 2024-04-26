@@ -421,7 +421,7 @@ footer h2{
 
 @media screen and (max-width: 1300px){
     section img{
-        width: 44%;
+        width: 45%;
 
     }
 
@@ -480,6 +480,149 @@ footer h2{
 
 @media screen and (max-width: 900px){
     .conteudo-sobre{
-        padding: 5px 15px;
+        padding: 10px 0;
     }
+
+    .encontre-nos{
+        margin-bottom: 50px;
+    }
+
+    footer{
+        height: 1150px;
+    }
+
+    #sobre{
+        flex-direction: column;
+        height: 825px; 
+    }
+
+    #sobre p{
+        margin-top: 20px;
+    }
+
+    #section img{
+        width: 55%;
+    }
+
+
+    .card{
+        width: 270px;
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+    .container-cards{
+        width: 100%;
+    }
+
+    #contato h2{
+        font-size: 22px;
+    }
+
+}
+
+
+@media screen and (max-width: 850px){
+    #sobre{
+        width: 100%;
+        background-color: unset;
+        
+    }
+
+    #contato{
+        width: 100%;
+        border-radius: unset;
+        margin-bottom: 30px;
+    }
+
+    .container-cards{
+        justify-content: space-between unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cases{
+        height: 1300px;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .banner img{
+        height: 475px;
+    }
+
+    .conteudo-banner{
+        height: 220px;
+        margin-bottom: 20px;
+
+    }
+    .conteudo-banner p{
+        font-size: 25px;
+        margin-bottom: 10px;
+        
+    }
+
+    .conteudo-2 p{
+        font-size: 22px;
+    }
+
+    #sobre{
+        margin-bottom: unset;
+    }
+
+    #sobre h2{
+        font-size: 25px;
+    }
+    #sobre p{
+        font-size: 20px;
+    }
+    section img{
+        width: 50%;
+        padding-left: unset;
+    }
+
+    .conteudo-sobre{
+        height: 430px;
+    }
+
+    .campo input{
+        width: 410px;
+    }
+
+    #contato form label{
+        width: 350px;
+    }
+
+    #cases h2{
+        font-size: 25px;
+    }
+
+    .encontre-nos img{
+        height: 50px;
+    }
+
+    .encontre-nos h3{
+        font-size: 20px;
+    }
+
+    .encontre-nos p{
+        font-size: 20px;
+    }
+
+    footer h2{
+        font-size: 20px;
+    }
+
+    .icones-redes svg{
+        height: 50px;
+    }
+
+
 }
