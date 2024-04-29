@@ -1,38 +1,42 @@
-@font-face{
+@font-face {
 
     font-family: "Inter";
     src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
-:root{
+:root {
+    --azul-gameon_menu: #1E4A6C;
     --azul-gameon: #77B3E2;
 }
 
 /* Reset de CSS - Limpa configurações padrão que atrapalham */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.container-grid{
+.container-grid {
     width: 90vw;
     max-width: 100%;
     margin: 0 auto;
 }
 
-header{
+header {
     /* position: fixed; */
     background-color: #1E4A6C;
     width: 100%;
+    height: 100px;
     
+}header button{
+    display: none;
 }
 
-header .container-grid{
+header .container-grid {
     height: 100%;
 
     display: flex;
@@ -40,12 +44,12 @@ header .container-grid{
     align-items: center;
 }
 
-header img{ 
+header img {
     width: 250px;
     align-items: center;
 }
 
-.menu{
+.menu {
     width: 500px;
     display: flex;
     justify-content: space-between;
@@ -55,38 +59,41 @@ header img{
     font-size: 18px;
 }
 
-.menu a{ /*para mexer nas letras do menu*/
+.menu a {
+    /*para mexer nas letras do menu*/
     color: white;
     font-size: 18px;
     font-family: "Inter";
 
-    text-decoration: underline transparent;  /*Para tirar a linha padrão que fica de baixo da letra */
-    text-decoration-thickness: 2px; /*stroke igual do figma */
+    text-decoration: underline transparent;
+    /*Para tirar a linha padrão que fica de baixo da letra */
+    text-decoration-thickness: 2px;
+    /*stroke igual do figma */
 
     text-transform: uppercase;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: black;
     font-size: 20px;
 
     transition: text-decoration 500ms ease;
 }
 
-.banner img{
+.banner img {
     height: 750px;
     width: 100%;
     padding: inherit;
-    
+
     background-repeat: no-repeat;
     background-position: center;
 
 }
 
-.conteudo-banner{
+.conteudo-banner {
     height: 300px;
-    background: rgb(63,157,229);
-    background: linear-gradient(90deg, rgba(63,157,229,1) 00%, rgba(156,191,218,1) 100%);
+    background: rgb(63, 157, 229);
+    background: linear-gradient(90deg, rgba(63, 157, 229, 1) 00%, rgba(156, 191, 218, 1) 100%);
 
     margin-top: -10px;
     margin-bottom: 100px;
@@ -98,26 +105,26 @@ header img{
 
 }
 
-.conteudo-banner p{
+.conteudo-banner p {
     color: black;
-  
+
     width: 100%;
 
     font-family: "Montserrat";
     font-size: 45px;
 
     display: flex;
-    
+
     justify-content: center;
 }
 
-.conteudo-2 p{
+.conteudo-2 p {
     font-family: "Montserrat";
     font-size: 30px;
     padding-top: 50px;
 }
 
-section #sobre{    
+section #sobre {
     width: 1000px;
     background-color: red;
     display: flex;
@@ -125,7 +132,7 @@ section #sobre{
 
 }
 
-#sobre{
+#sobre {
     height: 600px;
 
     display: flex;
@@ -140,20 +147,20 @@ section #sobre{
 
 }
 
-.conteudo-sobre{
+.conteudo-sobre {
     width: 50%;
     height: 500px;
     padding-left: 60px;
 }
 
-section img{
+section img {
     padding-left: 50px;
     width: 45%;
     height: 500px;
 
 }
 
-#sobre h2{
+#sobre h2 {
     font-family: "Inter";
     font-size: 30px;
 
@@ -162,10 +169,10 @@ section img{
     text-transform: uppercase;
 }
 
-#sobre p{
+#sobre p {
     font-family: "Montserrat";
     font-size: 25px;
-    
+
     display: flex;
     text-align: justify;
     align-items: center;
@@ -174,7 +181,7 @@ section img{
 
 }
 
-#contato{
+#contato {
     height: 1500px;
     width: 65%;
     margin: 0 auto;
@@ -185,35 +192,35 @@ section img{
     align-items: center;
 
     border-radius: 30px;
-    
+
     background-color: #77B3E2;
 
     margin-bottom: 150px;
     padding-bottom: 100px;
 }
 
-#contato h2{
+#contato h2 {
     margin: 15px 0 25px 0;
-    
+
     text-align: center;
 
     font-family: "Montserrat";
     font-size: 30px;
     text-transform: uppercase;
-   
+
 }
 
-#contato img{
-   height: 350px;
+#contato img {
+    height: 350px;
     display: flex;
     align-items: center;
 }
 
 
-#contato h3{
+#contato h3 {
     font-family: "Montserrat";
     font-weight: unset;
-   
+
     width: 250px;
     text-align: center;
     margin-bottom: 80px;
@@ -221,7 +228,7 @@ section img{
 
 
 
-#contato form{
+#contato form {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -229,54 +236,54 @@ section img{
     align-items: center;
 }
 
-.campo{
+.campo {
     margin-bottom: 75px;
-    
+
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-#contato form label{
+#contato form label {
     text-align: center;
     margin-bottom: 7px;
-    
+
     font-family: "Montserrat";
     font-size: 20px;
     color: white;
 }
 
-.campo input{
+.campo input {
     width: 510px;
     height: 35px;
-    
+
     border: none;
     border-radius: 4px;
-    
+
     font-size: 16px;
-    
+
     background-color: #316B9E;
-    
+
     display: flex;
     align-items: center;
     outline: none;
-    
+
     font-family: "Montserrat";
     color: white;
 
     text-indent: 10px;
 }
 
-.campo input:focus{
-    
+.campo input:focus {
+
     outline: 2px solid #ffffff;
 }
 
-#contato form input::placeholder{
+#contato form input::placeholder {
     color: #dddddd
 }
 
-#contato button{
+#contato button {
     height: 60px;
     width: 40%;
 
@@ -292,17 +299,17 @@ section img{
 
     cursor: pointer;
 
-    text-transform: uppercase; 
+    text-transform: uppercase;
 
     transition: background-color 500ms ease;
 
 }
 
-#contato button:hover{
+#contato button:hover {
     background-color: #ad4929;
 }
 
-#cases{
+#cases {
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -311,40 +318,40 @@ section img{
     text-align: center;
 }
 
-#cases h2{
+#cases h2 {
     margin-bottom: 70px;
     font-family: "Inter";
     font-size: 30px;
     text-transform: uppercase;
 }
 
-.container-cards{
+.container-cards {
     width: 65%;
 
     display: flex;
     justify-content: space-between;
 }
 
-.card{
+.card {
     width: 385px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 500px;
-    background-color: #77B3E2; 
+    background-color: #77B3E2;
     border-radius: 10px;
     border: none;
 
 }
 
-.card img{
+.card img {
     height: 55%;
     padding: 25px;
     width: 385px;
     border-radius: 8px;
 }
 
-.card p{
+.card p {
     padding: 7%;
     font-family: "Montserrat";
     font-size: 20px;
@@ -352,59 +359,59 @@ section img{
     margin-bottom: 65px;
 }
 
-footer{
+footer {
     width: 100%;
     height: 700px;
     background-color: #3F9DE5;
 }
 
-.rodape{
+.rodape {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
     padding-top: 110px;
-    
+
     text-align: center;
 }
 
-.encontre-nos img{
+.encontre-nos img {
     height: 70px;
     margin-bottom: 30px;
 }
 
-.encontre-nos h3{
+.encontre-nos h3 {
     font-family: "Inter";
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 
-.encontre-nos p{
+.encontre-nos p {
     font-family: "Montserrat";
     font-size: 25px;
     width: 320px;
 }
 
-.redes{
+.redes {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     padding-top: 70px;
-    
+
 }
 
-footer h2{
+footer h2 {
     font-family: "Inter";
     font-size: 25px;
     text-transform: uppercase;
     margin-top: 120px;
     text-align: center;
-    
+
 }
 
-.icones-redes{
+.icones-redes {
     display: flex;
     justify-content: space-between;
 
@@ -412,20 +419,20 @@ footer h2{
 }
 
 /* RESPANSIVIDADE PARA CELULAR */
-@media screen and (max-width: 1500px){
-    .container-cards{
+@media screen and (max-width: 1500px) {
+    .container-cards {
         width: 80%;
     }
 }
 
 
-@media screen and (max-width: 1300px){
-    section img{
+@media screen and (max-width: 1300px) {
+    section img {
         width: 45%;
 
     }
 
-    .conteudo-sobre{
+    .conteudo-sobre {
         padding-right: 60px;
         padding: 70px;
     }
@@ -435,194 +442,345 @@ footer h2{
         padding-right: unset;
     }
 
-    #sobre h2{
+    #sobre h2 {
         padding-top: unset;
         margin-bottom: 10px;
     }
 
-    .card{
+    .card {
         width: 300px;
     }
 
-    .card img{
+    .card img {
         width: 300px;
     }
-    
-    .container-cards{
+
+    .container-cards {
         width: 80%;
     }
 }
 
-@media screen and (max-width: 1200px){
-    .conteudo-sobre{
+@media screen and (max-width: 1200px) {
+    .conteudo-sobre {
         padding: 40px;
     }
-    
+
 }
 
-@media screen and (max-width: 1000px){
-    .conteudo-banner p{
+@media screen and (max-width: 1000px) {
+    .conteudo-banner p {
         text-align: center;
     }
 
-    .encontre-nos p{
+    header{
+        position: relative;
+        
+    }
+
+    header button{
+        width: fit-content;
+        background: none;
+        border: none;
+        display: unset;
+    }
+
+    header svg{
+        height: 50px;
+        width: unset;
+        fill: white;
+    }
+
+    .menu {
+        height: 250px;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: var(--azul-gameon_menu);
+        position: absolute;
+        top: 100px;
+        right: 0px;
+    }
+
+
+    .encontre-nos p {
         height: 50px;
     }
 
-    .rodape{
+    .rodape {
         flex-direction: column;
     }
 
-    footer{
+    footer {
         height: 1000px;
     }
 }
 
-@media screen and (max-width: 900px){
-    .conteudo-sobre{
+@media screen and (max-width: 900px) {
+    .conteudo-sobre {
         padding: 10px 0;
     }
 
-    .encontre-nos{
+    .encontre-nos {
         margin-bottom: 50px;
     }
 
-    footer{
+    footer {
         height: 1150px;
     }
 
-    #sobre{
+    #sobre {
         flex-direction: column;
-        height: 825px; 
+        height: 825px;
     }
 
-    #sobre p{
+    #sobre p {
         margin-top: 20px;
     }
 
-    #section img{
+    #section img {
         width: 55%;
     }
 
 
-    .card{
+    .card {
         width: 270px;
     }
 
-    .card img{
+    .card img {
         width: 100%;
     }
 
-    .container-cards{
+    .container-cards {
         width: 100%;
     }
 
-    #contato h2{
+    #contato h2 {
         font-size: 22px;
     }
 
 }
 
 
-@media screen and (max-width: 850px){
-    #sobre{
+@media screen and (max-width: 850px) {
+    #sobre {
         width: 100%;
         background-color: unset;
-        
+
     }
 
-    #contato{
+
+
+    #contato {
         width: 100%;
         border-radius: unset;
         margin-bottom: 30px;
     }
 
-    .container-cards{
+    .container-cards {
         justify-content: space-between unset;
         flex-direction: column;
         align-items: center;
     }
 
-    #cases{
+    #cases {
         height: 1300px;
     }
 
-    .card{
+    .card {
         margin-bottom: 30px;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-    .banner img{
+    header img {
+        width: 200px;
+    }
+
+    header svg {
+        height: 40px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .banner img {
         height: 475px;
     }
 
-    .conteudo-banner{
+    .conteudo-banner {
         height: 220px;
         margin-bottom: 20px;
 
     }
-    .conteudo-banner p{
+
+    .conteudo-banner p {
         font-size: 25px;
         margin-bottom: 10px;
-        
+
     }
 
-    .conteudo-2 p{
+    .conteudo-2 p {
         font-size: 22px;
     }
 
-    #sobre{
+    #sobre {
         margin-bottom: unset;
     }
 
-    #sobre h2{
+    #sobre h2 {
         font-size: 25px;
     }
-    #sobre p{
+
+    #sobre p {
         font-size: 20px;
     }
-    section img{
+
+    section img {
         width: 50%;
         padding-left: unset;
     }
 
-    .conteudo-sobre{
+    .conteudo-sobre {
         height: 430px;
     }
 
-    .campo input{
+    .campo input {
         width: 410px;
     }
 
-    #contato form label{
+    #contato form label {
         width: 350px;
     }
 
-    #cases h2{
+    #cases h2 {
         font-size: 25px;
     }
 
-    .encontre-nos img{
+    .encontre-nos img {
         height: 50px;
     }
 
-    .encontre-nos h3{
+    .encontre-nos h3 {
         font-size: 20px;
     }
 
-    .encontre-nos p{
+    .encontre-nos p {
         font-size: 20px;
     }
 
-    footer h2{
+    footer h2 {
         font-size: 20px;
     }
 
-    .icones-redes svg{
+    .icones-redes svg {
         height: 50px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .card{
+        margin-bottom: 50px;
+    }
+    
+    #cases h2 {
+        margin-bottom: 40px;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .campo input {
+        width: 350px;
+    }
+
+    footer h2 {
+        font-size: 16px;
+    }
+
+    .icones-redes {
+        padding: 10px;
+    }
+
+    .icones-redes svg {
+        height: 40px;
+    }
+
+    .encontre-nos h3 {
+        font-size: 15px;
+    }
+
+    .encontre-nos p {
+        font-size: 15px;
+    }
+
+    .encontre-nos img {
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    header img {
+        width: 170px;
+    }
+
+    header svg {
+        height: 35px;
+        }
+
+        .menu {
+            height: 170px;
+        }
+
+        #contato h2 {
+            font-size: 16px;
+        }
+
+        section img {
+            width: 45%;
+        }
+
+        #contato h3 {
+            font-size: 15px;
+        }
+
+        #contato form label{
+            font-size: 16px;
+            width: 305px;
+        }
+
+        .campo input {
+            margin: 10px;
+            width: 285px;
+        }
+
+        #cases h2 {
+            font-size: 16px;
+        }
+
+        .card {
+            width: 250px;
+        }
+        .card img{
+            padding: 20px;
+            padding-top: 30px;
+        }
+
+        .icones-redes{
+            width: unset;
+        }
+
+ @media screen and (max-width: 410px) {
+    .icones-redes{
+        padding: unset;
+    }
+ }
+
+
+
+
+
 
 
 }
