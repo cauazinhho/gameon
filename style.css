@@ -567,8 +567,29 @@ footer h2 {
         background-color: unset;
 
     }
+    
+    .conteudo-banner p{
+        font-size: 38px;
+    }
 
+    .conteudo-2 p{
+        font-size: 22px;
+    }
 
+    .encontre-nos img{
+        height: 60px;
+    }
+    .encontre-nos h3{
+        font-size: 22px;
+    }
+    footer h2{
+        font-size: 22px;
+    }
+    
+    
+    .encontre-nos img{
+        font-size: 22px;
+    }
 
     #contato {
         width: 100%;
@@ -590,6 +611,8 @@ footer h2 {
         margin-bottom: 30px;
     }
 }
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -616,6 +639,7 @@ footer h2 {
     }
 
     .conteudo-banner p {
+        padding: 0 10px;
         font-size: 25px;
         margin-bottom: 10px;
 
@@ -690,7 +714,39 @@ footer h2 {
     }
 }
 
+@media screen and (max-width: 460px) {
+    .campo input {
+        width: 360px;
+    }
+
+    footer h2{
+        margin-top: 90px;
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .conteudo-banner{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .icones-redes{
+        padding: unset;
+    }
+}
+
 @media screen and (max-width: 400px) {
+    .conteudo-banner p{
+        margin-bottom: unset;
+    }
+
+    .conteudo-2 p {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    
     .campo input {
         width: 350px;
     }
@@ -706,17 +762,31 @@ footer h2 {
     .icones-redes svg {
         height: 40px;
     }
-
+    
     .encontre-nos h3 {
         font-size: 15px;
     }
-
+    
     .encontre-nos p {
         font-size: 15px;
     }
-
+    
     .encontre-nos img {
         height: 45px;
+    }
+
+    #sobre{
+        height: 865px;
+    }
+
+    section img{
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .conteudo-banner p{
+        margin-bottom: unset;
     }
 }
 
@@ -727,16 +797,16 @@ footer h2 {
 
     header svg {
         height: 35px;
-        }
-
-        .menu {
+    }
+    
+    .menu {
             height: 170px;
         }
-
+        
         #contato h2 {
             font-size: 16px;
         }
-
+        
         section img {
             width: 45%;
         }
@@ -754,7 +824,7 @@ footer h2 {
             margin: 10px;
             width: 285px;
         }
-
+        
         #cases h2 {
             font-size: 16px;
         }
@@ -771,16 +841,39 @@ footer h2 {
             width: unset;
         }
 
- @media screen and (max-width: 410px) {
-    .icones-redes{
-        padding: unset;
+        .conteudo-banner p{
+            margin-bottom: unset;
+        }
+    
     }
- }
+    @media screen and (max-width: 370px){
+        .conteudo-banner p{
+            font-size: 22px;
+        }
+    }
 
+    @media screen and (max-width: 345px){
+        section img{
+            padding-top: 155px;
+        }
+        
+        .encontre-nos p{
+            padding: 20px;
+        }
 
-
-
-
-
-
-}
+        .icones-redes svg {
+            height: 35px;
+            margin-bottom: 30px;
+        }
+        
+        .icones-redes{
+            flex-wrap: wrap;
+            width: 240px;
+            align-items: center;
+        }
+    }
+    @media screen and (max-width: 330px){
+        .conteudo-banner p {
+            font-size: 20px;
+        }
+    }
