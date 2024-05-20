@@ -285,7 +285,6 @@ section img {
 
 .campo-textarea{
 
-    width: 80%;
     margin-bottom: 30px;
     
     text-align: left;
@@ -313,8 +312,8 @@ section img {
     resize: none;
 }
 
-.campo input:focus, .campo-textarea textarea:focus{ /*para dar cor por seleciona o campo*/
-    outline: 2px solid #316B9E;
+.campo-textarea textarea:focus{ /*para dar cor por seleciona o campo*/
+    outline: 2px solid #ffffff;
 
 }
 
@@ -522,11 +521,11 @@ footer h2 {
 
     header{
         position: relative;
-        
+        /* position: fixed; */
+
     }
 
     header .container-grid{
-        padding-left: 230px;
         justify-content: space-around;
         
     }
@@ -588,11 +587,12 @@ footer h2 {
     }
 
     #sobre p {
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
     #section img {
         width: 55%;
+        padding-left: unset;
     }
 
 
@@ -701,7 +701,7 @@ footer h2 {
     }
 
     .campo input {
-        width: 410px;
+        width: 380px;
     }
 
     #contato form label {
@@ -743,35 +743,56 @@ footer h2 {
         
     }
 }
-
-@media screen and (max-width: 400px) {
-    .campo input {
-        width: 350px;
+@media screen and (max-width: 421px) {
+    #sobre{
+        height: 980px;
     }
 
-    footer h2 {
-        font-size: 16px;
+    section img{
+        margin-top: 50px;
     }
+}
 
-    .icones-redes {
-        padding: 10px;
-    }
 
-    .icones-redes svg {
-        height: 40px;
+@media screen and (max-width: 410px) {
+    .icones-redes{
+        padding: unset;
     }
-
-    .encontre-nos h3 {
-        font-size: 15px;
+    
+    @media screen and (max-width: 400px) {
+        .campo input {
+            width: 350px;
+        }
+    
+        footer h2 {
+            font-size: 16px;
+        }
+    
+        .icones-redes {
+            padding: 10px;
+        }
+    
+        .icones-redes svg {
+            height: 40px;
+        }
+    
+        .encontre-nos h3 {
+            font-size: 15px;
+        }
+        
+        .encontre-nos p {
+            font-size: 15px;
+        }
+        
+        .encontre-nos img {
+            height: 45px;
+        }
     }
-
-    .encontre-nos p {
-        font-size: 15px;
-    }
-
-    .encontre-nos img {
-        height: 45px;
-    }
+    
+.campo-textarea textarea {
+       margin: 0 3%;
+       height: 170px;
+}
 }
 
 @media screen and (max-width: 385px) {
@@ -824,10 +845,4 @@ footer h2 {
         .icones-redes{
             width: unset;
         }
-
- @media screen and (max-width: 410px) {
-    .icones-redes{
-        padding: unset;
     }
- }
-}
