@@ -27,7 +27,7 @@ html {
 }
 
 header {
-    /* position: fixed; */
+    position: fixed;
     background-color: #1E4A6C;
     width: 100%;
     height: 100px;
@@ -283,6 +283,42 @@ section img {
     color: #dddddd
 }
 
+.campo-textarea{
+
+    width: 80%;
+    margin-bottom: 30px;
+    
+    text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.campo-textarea textarea{
+    color: white;
+    background-color: #316B9E;
+    
+    border: none;
+    border-radius: 4px ;
+
+    padding: 10px;
+
+    font-family: "Montserrat";
+    font-size: 17px;
+
+    outline: none;
+
+    resize: none;
+}
+
+.campo input:focus, .campo-textarea textarea:focus{ /*para dar cor por seleciona o campo*/
+    outline: 2px solid #316B9E;
+
+}
+
+
 #contato button {
     height: 60px;
     width: 40%;
@@ -418,8 +454,18 @@ footer h2 {
     width: 385px;
 }
 
+/* Java-Script */
+.menu-fechado{
+    display: none;
+}
+
+#icone-barras{
+    display: none;
+}
+
 /* RESPANSIVIDADE PARA CELULAR */
 @media screen and (max-width: 1500px) {
+
     .container-cards {
         width: 80%;
     }
@@ -468,12 +514,20 @@ footer h2 {
 }
 
 @media screen and (max-width: 1000px) {
+   
+
     .conteudo-banner p {
         text-align: center;
     }
 
     header{
         position: relative;
+        
+    }
+
+    header .container-grid{
+        padding-left: 230px;
+        justify-content: space-around;
         
     }
 
@@ -567,29 +621,8 @@ footer h2 {
         background-color: unset;
 
     }
-    
-    .conteudo-banner p{
-        font-size: 38px;
-    }
 
-    .conteudo-2 p{
-        font-size: 22px;
-    }
 
-    .encontre-nos img{
-        height: 60px;
-    }
-    .encontre-nos h3{
-        font-size: 22px;
-    }
-    footer h2{
-        font-size: 22px;
-    }
-    
-    
-    .encontre-nos img{
-        font-size: 22px;
-    }
 
     #contato {
         width: 100%;
@@ -611,8 +644,6 @@ footer h2 {
         margin-bottom: 30px;
     }
 }
-
-
 
 @media screen and (max-width: 600px) {
 
@@ -639,7 +670,6 @@ footer h2 {
     }
 
     .conteudo-banner p {
-        padding: 0 10px;
         font-size: 25px;
         margin-bottom: 10px;
 
@@ -714,39 +744,7 @@ footer h2 {
     }
 }
 
-@media screen and (max-width: 460px) {
-    .campo input {
-        width: 360px;
-    }
-
-    footer h2{
-        margin-top: 90px;
-        padding: 35px;
-    }
-}
-
-@media screen and (max-width: 470px){
-    .conteudo-banner{
-        padding: 30px;
-    }
-}
-
-@media screen and (max-width: 410px) {
-    .icones-redes{
-        padding: unset;
-    }
-}
-
 @media screen and (max-width: 400px) {
-    .conteudo-banner p{
-        margin-bottom: unset;
-    }
-
-    .conteudo-2 p {
-        margin-top: 15px;
-        font-size: 20px;
-    }
-    
     .campo input {
         width: 350px;
     }
@@ -762,31 +760,17 @@ footer h2 {
     .icones-redes svg {
         height: 40px;
     }
-    
+
     .encontre-nos h3 {
         font-size: 15px;
     }
-    
+
     .encontre-nos p {
         font-size: 15px;
     }
-    
+
     .encontre-nos img {
         height: 45px;
-    }
-
-    #sobre{
-        height: 865px;
-    }
-
-    section img{
-        padding-top: 80px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .conteudo-banner p{
-        margin-bottom: unset;
     }
 }
 
@@ -797,16 +781,16 @@ footer h2 {
 
     header svg {
         height: 35px;
-    }
-    
-    .menu {
+        }
+
+        .menu {
             height: 170px;
         }
-        
+
         #contato h2 {
             font-size: 16px;
         }
-        
+
         section img {
             width: 45%;
         }
@@ -824,7 +808,7 @@ footer h2 {
             margin: 10px;
             width: 285px;
         }
-        
+
         #cases h2 {
             font-size: 16px;
         }
@@ -841,39 +825,9 @@ footer h2 {
             width: unset;
         }
 
-        .conteudo-banner p{
-            margin-bottom: unset;
-        }
-    
+ @media screen and (max-width: 410px) {
+    .icones-redes{
+        padding: unset;
     }
-    @media screen and (max-width: 370px){
-        .conteudo-banner p{
-            font-size: 22px;
-        }
-    }
-
-    @media screen and (max-width: 345px){
-        section img{
-            padding-top: 155px;
-        }
-        
-        .encontre-nos p{
-            padding: 20px;
-        }
-
-        .icones-redes svg {
-            height: 35px;
-            margin-bottom: 30px;
-        }
-        
-        .icones-redes{
-            flex-wrap: wrap;
-            width: 240px;
-            align-items: center;
-        }
-    }
-    @media screen and (max-width: 330px){
-        .conteudo-banner p {
-            font-size: 20px;
-        }
-    }
+ }
+}
