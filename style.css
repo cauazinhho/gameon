@@ -295,6 +295,10 @@ section img {
     
 }
 
+.campo-textarea textarea::placeholder{
+    color: #dddddd
+}
+
 .campo-textarea textarea{
     color: white;
     background-color: #316B9E;
@@ -748,9 +752,6 @@ footer h2 {
         height: 980px;
     }
 
-    section img{
-        margin-top: 50px;
-    }
 }
 
 
@@ -844,5 +845,8 @@ footer h2 {
 
         .icones-redes{
             width: unset;
+            flex-direction: column;
+            padding: unset;
+            padding-bottom: 5px;
         }
     }
