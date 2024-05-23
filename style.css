@@ -594,8 +594,8 @@ footer h2 {
         margin-top: 60px;
     }
 
-    #section img {
-        width: 55%;
+    section img {
+        width: 300px;
         padding-left: unset;
     }
 
@@ -647,6 +647,18 @@ footer h2 {
     .card {
         margin-bottom: 30px;
     }
+}
+@media screen and (max-width: 670px){
+    #img_sobre {
+    margin-top: 110px;
+    }
+}
+
+@media screen and (max-width: 625px){
+    #img_sobre{
+        margin-top: 120px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -849,4 +861,11 @@ footer h2 {
             padding: unset;
             padding-bottom: 5px;
         }
+    }
+
+    @media screen and (max-width: 385px) {
+        #img_sobre{
+            margin-top: 50px;
+        }
+
     }
